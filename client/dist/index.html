@@ -45,7 +45,7 @@
         },
       },
     };
-    const settings = fetch(`${serverURL}/shopify/api/frontend_config/${project_name}`)
+    const settings = fetch(`${serverURL}/shopify/api/frontend_config/${project_name}.myshopify.com`)
     .then(response => response.json())
     .then(data => {
       const designSettings = data?.design.style || defaultDesignSettings;
